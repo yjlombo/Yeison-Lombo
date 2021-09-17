@@ -39,10 +39,10 @@ final_model <- final_model(species_name = unique(sp_input[1]),
             algorithms = NULL, #if null it will take all the algorithms in disk
             models_dir = "./resultados",
             which_models = c("raw_mean",
-                             "bin_mean",
-                             "bin_consensus"),
+                             "bin_mean"),
             consensus_level = 0.5,
-            uncertainty = TRUE,
+            uncertainty = FALSE,
+            scale_models=TRUE,
             overwrite = TRUE)
 
 
